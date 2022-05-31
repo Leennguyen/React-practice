@@ -1,0 +1,124 @@
+.contain {
+    margin: 1% 10%;
+}
+
+.news-item {
+    width: 32%;
+    padding: 1%;
+}
+
+.news-item img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.news-item button {
+    padding: 1% 3%;
+    text-align: center;
+    margin: 3% 0;
+}
+
+* {
+    margin: 0;
+    text-align: justify;
+}
+
+.form-cre {
+    font-size: 24px;
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.form-cre p {
+    width: 30px;
+}
+
+.form-cre input {
+    width: 30rem;
+    height: 30px;
+}
+
+.form-cre button {
+    font-size: 24px;
+}
+
+
+/* ____________________________ */
+
+.show-product {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    float: left;
+}
+
+.show-product img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+/* _____________________________________________ */
+.table-admin{
+    border: 1px black solid;
+}
+.table-admin img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+tr {
+    width: 0;
+    height: 0;
+}
+td {
+    width: 20%;
+    padding: 0 2%;
+    border: 1px solid black;
+    margin: 0%;
+}
+.btn button{
+    padding: 10px 20px;
+}
+/* ____________________________________ */
+.row {
+    display: flex;
+    margin: 1% 5%;
+    gap: 3%;
+}
+.large-news {
+    width: 800px;
+}
+.large-news img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.medium-news {
+    padding-bottom: 10px;
+    width: 400px;
+}
+.medium-news img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.small-news {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    text-align: justify;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.small-news img {
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}   

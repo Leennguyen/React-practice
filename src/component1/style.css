@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+.form-cre{
+    font-size: 24px;
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.form-cre p {
+    width: 30px;
+}
+.form-cre input{
+    width: 30rem;
+    height: 30px;
+}
+.form-cre button{
+    font-size: 24px;
+}
+/* ____________________________ */
+.show-product{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    float:left;
+}
+.show-product img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

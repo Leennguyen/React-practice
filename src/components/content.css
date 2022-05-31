@@ -1,0 +1,286 @@
+/* SLIDES */
+.slides {
+    display: flex; 
+}
+#slides_img img{
+    width: 1900px;
+    height: 40rem;
+    object-fit: cover;
+    padding:0;
+}
+
+.slider{
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+/* ____________________________ */
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/* ____________________________ */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center
+}
+.navigation-auto div{
+    transition: 10s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+/* PRODUCTS */
+.pro_newArrival h2, .pro_dailyOffer h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+.pro_newArrival hr, .pro_dailyOffer hr{
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: orangered;
+    border: orangered solid 1px;
+}
+.allProducts{
+    background-color: #fff;
+    position: relative;
+}
+/* Products section */
+.headerProducts {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.pro_newArrival .line1  {
+    width: 86.5%;
+    border: #000 solid 1px;
+}
+.adPro1 {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 8rem;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 0;
+}
+#adPro1-img img {
+    width: 800px;
+    height: 1000px;
+    object-fit: cover;
+}
+#adPro1-text {
+    font-family: DomaineDisplay;
+    width: 25%;
+    text-align: center;
+    font-size: 56px;
+    margin: 0 12%;
+}
+#adPro1-text p {
+    font-size: 18px;
+    font-family: GTWalsheimPro;
+    margin: 0;
+}
+#adPro1-text hr {
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    border: red;
+}
+.proCard1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+#displayPro1-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+#displayPro1-right-img img{
+    width: 750px;
+    height: 962px;
+    object-fit: cover;
+    padding: 0%;
+    position: relative;
+}
+#displayPro1-right-img p {
+    position: absolute;
+    z-index: 1;
+    font-family: DomaineDisplay;
+    font-size: 90px;
+    margin-top: 22.5%;
+    margin-left: 13%;
+    color: rgb(92, 53, 1);
+    text-transform: uppercase;
+}
+#n {
+    color: rgb(223, 220, 220);
+}
+.productsSection1{
+    text-align: center;
+    margin: 15rem 8rem;
+}
+.productsSection1 img{
+    padding: 1rem;
+    border: none;
+}
+
+.adPro2 {
+    margin: 8rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+#adPro2-img img{
+    width: 1631px;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+}
+#adPro2-text {
+    position: absolute;
+    z-index: 1;
+    font-family: DomaineDisplay;
+    font-size: 100px;
+    margin-top: 13%;
+    margin-left: 36%;
+    color: rgb(92, 53, 1);
+    text-transform: uppercase;
+}
+#ng {
+    color: beige;
+}
+
+#displayPro2-bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.productsSection2{
+    text-align: center;
+    margin: 0 1rem;
+
+}  
+.pro_dailyOffer {
+    margin-bottom: 15rem;
+}
+
+
+.image-home {
+    overflow: hidden;
+}
+
+.image-home img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    transition: .8s ease;
+}
+
+.image-home img:hover {
+    transform: scale(1.3);
+}
+
+.card {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    transition: .4s;
+}
+
+.product-name-home {
+    padding: 10px 0;
+    height: 32px;
+}
+
+.product-price-home {
+    color: red;
+    font-weight: 500;
+}
+
+.product-price-home::before {
+    content: "$";
+}
+
+.addToCard {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 70%;
+    right: 38%;
+    border: none;
+    color: #ffff;
+    display: none;
+}
+
+.card:hover .addToCard {
+    background-color: rgba(255, 0, 0, 0.489);
+    display: block;
+}
+
+
+.banner_img img{
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+}
+.banner_img h2{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+.banner_img hr{
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5rem;
+    border: orangered solid 1px;
+}

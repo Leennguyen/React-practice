@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=M+PLUS+1p:wght@500&family=Mukta&family=NTR&display=swap');
+
+.container{
+    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'NTR', sans-serif;
+    font-size: 19px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+/* MENU */
+.menu{
+    max-width: 100%;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid rgb(241, 240, 240);
+}
+.nav_menu{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+}
+.main_menu{
+    display: flex;
+    text-transform: uppercase;
+}
+.main_menu > li{
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+}
+.main_menu ul, li{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.main_menu a{
+    text-decoration: none;
+    color: black
+}
+.main_menu a:hover{
+    color: rgb(202, 149, 3);
+}
+.main_menu li:hover .sub_menu{
+    display: block;
+    background-color: rgb(238, 237, 237);    
+}
+.sub_menu ul{
+    transition: 2s ease-in;
+}
+.sub_menu a{
+    color: rgb(68, 68, 68);
+}
+.sub_menu{
+    display: none;
+    position: absolute;
+}
+.sub_menu > li{
+    padding: 0.5rem 1.5rem 0 1.5rem;
+    border-bottom: rgb(207, 206, 206) 1px solid;
+}
+.icon_menu button{
+    background-color: white;
+    border: 0;
+}
+.icon_menu{
+    padding: 2.5rem 2rem;
+}
+.icon_menu #bi1 {
+    font-size: 21px;
+}
+.icon_menu .bi {
+    padding: 0.2rem;
+    font-size: 25px;
+}
+.line3 {
+    margin-top: 2.8rem;
+    display: none;
+    cursor: pointer;
+}
+.line3 div{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 0.2rem;
+}
+.lineRespon {
+    background-color: #fff;
+    position: fixed;
+    padding: 3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    transform: translateX(100%);
+    transition: all linear 0.2s;
+}
+.lineRespon #close {
+    padding-left: 100%;
+    font-size: 25px;
+    background-color: white;
+    margin: 0;
+}
+.right_menu a {
+    text-decoration: none;
+    color: #000;
+}
+.right_menu a:hover{
+    color: rgb(202, 149, 3);
+}
+.right_menu {
+    display: block;
+    text-transform: uppercase;
+}
+
+.nav_overlay_search, .nav_overlay_cart, .nav_overlay_line {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.4s;
+}
+.hollow{
+    width: 100%;
+    height: 145px;
+}
+.nav_input_line:checked ~ .nav_overlay_line {
+    display: block;
+}
+.nav_input_line:checked ~ .lineRespon {
+    transform: translateX(0%);
+}
+.nav_input_search:checked ~ .nav_overlay_search {
+    display: block;
+}
+.nav_input_search:checked ~ .search {
+    transform: translateX(0%);
+}
+.nav_input_cart:checked ~ .nav_overlay_cart {
+    display: block;
+}
+.nav_input_cart:checked ~ .cart{
+    transform: translateX(0);
+}
+/* SEARCH */
+.search{
+    background-color: #fff;
+    position: fixed;
+    padding: 3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    transform: translateX(100%);
+    transition: all linear 0.2s;
+}
+#buttonSearch{
+    margin: 0;
+}
+.search .Psearch{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    display: flex;
+}
+.search_into #close{
+    padding-left: 100%;
+    font-size: 25px;
+    background-color: white;
+    margin: 0;
+}
+.search input{
+    padding: 5%;
+    padding-right: 25%;
+    border: 0;
+    background-color: rgb(235, 235, 235);
+    outline: none;  
+    font-size: 17px;
+}
+.search button {
+    border: 0;
+    font-size: 18px;
+    margin-top: 1.1rem;
+    margin-right: 0.5rem;
+    background-color: rgb(235, 235, 235);
+    color: gray;
+}
+.searchPro{
+    display: flex;
+}
+#listNames {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: block;
+}
+#proNames {
+    padding-left: 15px;
+    background-color: red;
+    border: 1px solid black;
+    width: 350px;
+}
+.proSearch {
+    display: flex;
+}
+.image-search img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* CART */
+.cart{
+    background-color: #fff;
+    position: fixed;
+    padding: 0 2%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    transform: translateX(100%);
+    transition: all linear 0.2s;
+    padding: 3%;
+
+}
+
+.cart_into #close{
+    padding-left: 100%;
+    font-size: 25px;
+    background-color: white;
+    margin: 0;
+}
+
+.containPro hr {
+    width: 100%;
+}
+#tableCartView p{
+    margin: 0;
+}
+#tableButton button {
+    width: 188px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: #000 solid 1px;
+}
+#tableButton button:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 solid 1px;
+}

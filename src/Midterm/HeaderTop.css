@@ -1,0 +1,35 @@
+
+.hihi{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+.header-top img {
+    line-height: 82px;
+}
+p{
+    margin: 0;
+}
+.header-top {
+    margin: 0;
+    width: 70%;
+    text-align: center;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: 20% 30% 15% 15% 20%;
+} 
+.header-top-descrip{
+    height: 50px;
+}
+.header-top-descrip button{
+    padding: 15px 5px;
+    width: 140px;
+    text-align: center;
+}
+.header-top-descrip input{
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+}
